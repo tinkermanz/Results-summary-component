@@ -1,0 +1,116 @@
+@font-face {
+	font-family: 'Hanken Grotesk';
+	font-weight: 500;
+	src: url('assets/fonts/HankenGrotesk-VariableFont_wght.ttf') format('ttf');
+}
+@font-face {
+	font-family: 'Hanken Grotesk';
+	font-weight: 700;
+	src: url('assets/fonts/HankenGrotesk-VariableFont_wght.ttf') format('ttf');
+}
+@font-face {
+	font-family: 'Hanken Grotesk';
+	font-weight: 800;
+	src: url('assets/fonts/HankenGrotesk-VariableFont_wght.ttf') format('ttf');
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Hanken Grotesk', sans-serif;
+	font-size: 18px;
+}
+
+#main {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.main__div {
+	display: flex;
+}
+
+.main__component {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	max-width: 280px;
+	border-radius: 23px;
+	padding: 29px;
+	background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+	text-align: center;
+}
+.main__component-h2 {
+	font-size: 17px;
+	margin-bottom: 23px;
+	color: hsl(241, 100%, 89%);
+}
+.main__component--circle {
+	height: 150px;
+	width: 150px;
+	border-radius: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 23px;
+	background-image: linear-gradient(
+		hsla(256, 72%, 46%, 1),
+		hsla(241, 72%, 46%, 0)
+	);
+}
+.main__component--circle-large {
+	font-size: 51px;
+	color: hsl(0, 0%, 100%);
+	font-weight: bold;
+}
+.main__component--circle-small {
+	font-size: 15px;
+	color: hsla(241, 100%, 89%, 0.54);
+}
+.main__component-h1 {
+	color: hsl(0, 0%, 100%);
+	font-size: 22px;
+	margin-bottom: 15px;
+}
+.main__component-paragraph {
+	color: hsla(0, 0%, 100%, 0.693);
+	padding: 0 5px 0 5px;
+	font-size: 15px;
+	margin-bottom: 11px;
+}
+.main__summary {
+	padding: 21px;
+}
+.main__summary-h2 {
+	color: hsl(224, 30%, 27%);
+}
+.main__summary--lists,
+.main__summary--list {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+.main__summary--list {
+	flex-direction: row;
+	padding: 11px;
+	gap: 11px;
+}
+
+.main__summary-btn {
+	width: 100%;
+	padding: 11px 22px;
+	border-radius: 22px;
+	outline: none;
+	border: none;
+}
+
+ul {
+	list-style-type: none;
+}
